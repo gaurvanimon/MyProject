@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------- Common CSS Property ----------*/
+body{font-size:16px;background:url(../images/background.jpg) #e3f4ff repeat}
+.clean{clear:both}
+.alignleft{text-align:left}
+.alignright{text-align:right}
+.aligncenter{text-align:center}
+.alignjustify{text-align:justify}
+.flleft{float:left}
+.flright{float:right}
+.container{width:1140px;padding-right:10px;padding-left:10px;padding-right:10px;margin:0 auto}
+.container:before,.container:after{display:table;content:" "}
+.container:after{clear:both}
+.clearfix:before,.clearfix:after{display:table;content:" "}
+.clearfix:after{clear:both}
+.row{margin-right:-10px;margin-left:-10px}
+.row:before,.row:after{display:table;content:" "}
+.row:after{clear:both}
+.whitecolor{color:#fff}
+.yellowcolor{color:#ffc600}
+.darkgrey{color:#333}
+.redcolor{color:#a01300}
+a{text-decoration:none}
+@font-face {font-family: "humnst777-b";src:url("../fonts/humnst777-b.ttf") format("truetype");font-style:normal}
+hr.hard {height: 1px;margin: 10px 0;background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,0));background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,0));background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,0));background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.9), rgba(0,0,0,0));border: 0;}
+hr.hr-darkgrey{border:0;background-color:#333;height:1px;}
+hr.commonwhite{height:1px;background-color:#fff;border:none}
+hr.commongreen{height:1px;background-color:#008040;border:none}
+.normaltext14{font-size:14px;}
+.normaltext18{font-size:18px;}
+.normaltext20{font-size:20px;}
+hr.dottedline{width:100%;border:1px dotted #999;border-style:none none dotted;margin:18px 0px;}
+hr.dottedlinepagination{width:100%;border:1px dotted #999;border-style:none none dotted;margin:7px 0px;}
+.pagination {list-style:none;text-align:center}
+.pagination li{display:inline-block;margin-right:4px}
+.pagination li a{padding:5px 11px 3px 11px; background-color:#127C65;display:block;color:#fff}
+.pagination li a:hover{background-color:#EEAE00;color:#fff}
+.orangetext{color:#f66200}
+.pro_det_link:hover{text-decoration:none}
+.margin0{margin:0}
+.whitetext{color:#fff}
+.lineheight1{line-height:1.6}
+.romanlist{list-style:decimal;margin-left:38px;line-height:1.4}
+.disclist{list-style:disc;margin-left:38px;line-height:1.4}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			background-color:#fff;
+}
+.effect7:before, .effect7:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+}
+.effect7:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*---- scrool to top ----*/
+.scrollup{width:28px;height:28px;text-indent:-9999px;opacity:0.7;position:fixed;bottom:40px;right:30px;display:none;background: url("../images/icon_top-1.png") no-repeat;z-index:99999;}
+
+/*---- Fixed Navigation at top ----*/
+.sticky {position: fixed;width: 100%;left: 0;top: 0;z-index: 100;border-top: 0}
+
+/*---- Scrollbar Style ----*/
+.scrollbar{background: #F5F5F5;overflow-y: scroll;}
+/**STYLE 3 */
+
+
+#style-3::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
+#style-3::-webkit-scrollbar{width: 6px;	background-color: #F5F5F5;}
+#style-3::-webkit-scrollbar-thumb{background-color: #000000;}
+
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{padding:0px 10px;min-height:1px;float:left}
+.col-12 {width: 100%;}
+.col-11 {width: 91.66666667%;}
+.col-10 {width: 83.33333333%;}
+.col-9 {width: 75%;}
+.col-8 {width: 66.66666667%;}
+.col-7 {width: 58.33333333%;}
+.col-6 {width: 50%;}
+.col-5 {width: 41.66666667%;}
+.col-4 {width: 33.33333333%;}
+.col-3 {width: 25%;}
+.col-2 {width: 16.66666667%;}
+.col-1 {width: 8.33333333%;}
+
+.topbar{background-color:#1893e1;padding:4px 0}
+.logo{float:left;width:28%}
+.logo img{width:100%}
+.logo img:hover{opacity:0.9;cursor:pointer}
+.logotext{float:left;width:69%;margin-left:3%;color:#fff;margin-top:11px}
+.logotext h1{font-size:44px;margin:0}
+.logotext h3{margin:0}
+.buttontop ul{float:right;margin-top:13px}
+.buttontop ul li{float:left;margin-right:10px}
+.buttontop ul li:last-child{margin-right:0}
+.buttontop ul li a{background-color:#003466;color:#fff;padding:8px 9px;font-size:14px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;display:block}
+.buttontop ul li a:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+
+.searchdetail ul{float:right;margin-top:12px}
+.searchdetail ul li{float:left;margin-right:10px}
+.searchdetail ul li:last-child{margin-right:0}
+.searchdetail input[type="text"]{border:0;padding:6px 14px;font-size:14px}
+.searchdetail input[type="submit"]{border:0;font-size:14px;padding:6px 14px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;background-color:#003466;color:#fff}
+.searchdetail input[type="submit"]:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+
+.helpline{background-color:#eeae00;color:#fff;padding:4px 0 2px 0}
+.helpline ul{float:right}
+.helpline ul li{float:left;margin-right:6px}
+.helpline ul li:last-child{margin-right:0}
+.helpline ul li a{color:#fff;display:block}
+
+nav{background-color:#003466}
+
+/*---- Desktop menu begin ----*/
+/*---- reset default ul styles ----*/
+#menu, #menu ul {margin: 0;padding: 0;list-style: none}
+#menu {display:block;background-color: #003466}
+#menu:before,#menu:after {content: "";display: table}
+#menu:after {clear: both}
+#menu {zoom:1}
+#menu li {display:inline-block;float:left;position: relative}
+#menu a {display:block;text-align:center;padding: 12px 22.3px;color: #fff;text-transform: uppercase;font: bold 12px Arial, Helvetica;text-decoration: none}
+#menu li:hover > a {color: #fafafa;background-color:#1893e1}
+*html #menu li a:hover { /* IE6 only */color: #1893e1}
+
+/*----------------- Dropdown menu --------------*/
+#menu ul {margin:30px 0px 0 0px;_margin: 0; /*IE6 only*/opacity: 0;position:absolute;visibility: hidden;top:100%;left: 0; z-index: 1;background: #111;transition: all .4s ease-in-out}
+#menu li:hover > ul {opacity: 0.9;visibility: visible;margin: 0}
+#menu ul ul {top: 0;background: #111;left: 234px;margin:0px 0px 0 30px;transition: all .4s ease-in-out;_margin: 0; /*IE6 only*/}
+#menu ul li {float: none;display: block;border: 0;_line-height: 0; /*IE6 only*/}
+#menu ul a {padding: 10px;width: 228px;_height: 10px; /*IE6 only*/display: block;white-space: nowrap;float: none;text-transform: none;text-align:left}
+#menu ul a:hover {background-color: #0186ba;background-image: linear-gradient(#04acec, #0186ba)}
+
+/*---------- First and last list elements styles (Little Arrow) --------*/
+#menu ul li:first-child > a:after {content: '';position: absolute;left: 40px;top: -6px;border-left: 6px solid transparent;border-right: 6px solid transparent;border-bottom: 6px solid #111}
+#menu ul ul li:first-child a:after {left: -6px;top: 50%;margin-top: -6px;border-left: 0;border-bottom: 6px solid transparent;border-top: 6px solid transparent;border-right: 6px solid #111}
+#menu ul li:first-child a:hover:after {border-bottom-color: #04acec}
+#menu ul ul li:first-child a:hover:after {border-right-color: #0299d3;border-bottom-color: transparent}
+/*---- Desktop menu end ----*/
+
+.add1,.add2,.add3{height:119.4px;padding:10px;text-align:center;vertical-align:middle;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px}
+.add1 img,.add2 img,.add3 img{width:96%;position: relative;top: 50%;transform: translateY(-50%);}
+.add1{background-color:#1893e1;margin-bottom:10px}
+.add2{background-color:#003466;margin-bottom:10px}
+.add3{background-color:#eeae00}
+
+.collegelistwrap{background-color:#4a8ab2}
+.clientswrap{background-color:#127c65}
+.collegelist{margin:10px 14px}
+.collegelist li{line-height:2}
+.collegelist li a{color:#fff}
+.collegelist li a:hover{text-decoration:underline}
+.collegelist li a i{color:#000;margin-right:10px}
+
+.wrap1{background-color:#fff;}
+.wrap1heading{background-color:#127c65;color:#fff;font-size:22px;padding:10px 12px}
+.wrap1heading i{margin-right:6px;font-size:26px;}
+.wrap1text{padding:16px 22px;height:360px;overflow:auto}
+.wrap1text i{color:#eeae00;margin-right:10px;line-height:1.5}
+.wrap1text a{color:#333}
+.wrap1text a:hover{color:#111;text-decoration:underline}
+
+.searchresult{background-color:#EE8100}
+.searchresultheading{background-color:#D94D00}
+.searchresultheading p{color:#fff;margin:0;padding:.6em 1em}
+.searchresult input[type="submit"]{border:0;font-size:14px;padding:6px 14px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;background-color:#003466;color:#fff}
+.searchresult input[type="submit"]:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+.searchresult input[type="text"]{border:0;padding:6px 14px;font-size:14px}
+.searchresult select{border:0;padding:6px 10px;font-size:14px}
+.searchresultinput {padding:1em}
+
+
+
+#footerwrap{background-color:#1893e1; padding:16px 0}
+#footerwrap h3{color:#222;margin:0;margin-bottom:8px}
+.usefullink{font-size:14px}
+.usefullink li{line-height:1.5}
+.usefullink li a{color:#fff}
+.socialiconbottom li{display:inline-block}
+.socialiconbottom li a{color:#fff}
+.newsletter p{margin-top:0;margin-bottom:12px}
+.newsletter input[type="text"]{border:0;padding:6px 14px;font-size:14px}
+.newsletter input[type="email"]{border:0;padding:6px 14px;font-size:14px}
+.newsletter input[type="submit"]{border:0;font-size:14px;padding:6px 14px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;background-color:#003466;color:#fff}
+.newsletter input[type="submit"]:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+#copyright{background-color:#003466;padding:12px 0;color:#fff;font-size:14px}
+
+
+
+/*---- contact page ----*/
+.addresswrap{background-color:#D7ECFB;padding:1em}
+.iconleft{float:left;width:7%;font-size:20px;line-height:1.2;}
+.addressright{float:left;width:93%;line-height:1.5;font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif}
+.addresswrap h2{color:#1893E1;margin-top:0}
+.form-meta label{margin-bottom:5px;display:block}
+
+.form-meta .formcol1{float:left;width:48%;margin-right:2%}
+.form-meta .formcol1 input{padding:0.6em;width:100%;margin-bottom:10px;font-size:14px;border:none}
+.form-meta .formcol1 select{padding:0.6em;width:100%;margin-bottom:10px;font-size:14px;border:none}
+
+.form-meta .formcol2{float:left;width:48%;margin-left:2%}
+.form-meta .formcol2 input{padding:0.6em;width:100%;margin-bottom:10px;font-size:14px;border:none}
+.form-meta .formcol2 select{padding:0.6em;width:100%;margin-bottom:10px;font-size:14px;border:none}
+
+.form-meta textarea{width:100%;resize:none;padding:0.6em;font-size:14px;border:none}
+input.submitinner[type="submit"]{border:0;font-size:14px;padding:9px 18px;background-color:#003466;color:#fff}
+input.submitinner[type="submit"]:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+
+/*---- courses Page ----*/
+.courses{padding:16px 16px;}
+.courses i{color:#eeae00;margin-right:10px;line-height:1.5}
+.courses a{color:#003466}
+.courses a:hover{color:#111;text-decoration:underline}
+.courseswrap{margin-top:8px}
+.logoleft{float:left;margin-right:4%;width:22%}
+.logoleft img{width:100%;border:4px solid rgba(0,52,102,0.4);padding:5px;border-radius:8px}
+.textright{float:left;width:74%}
+.textright h3{margin-top:10px;margin-bottom:10px}
+.textright p{font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif}
+.coursebutton{text-align:right}
+.coursebutton input[type="submit"]{border:0;font-size:14px;padding:9px 17px;background-color:#003466;color:#fff}
+.coursebutton a.flatbtn{border:0;font-size:14px;padding:9px 17px;background-color:#003466;color:#fff}
+.coursebutton input[type="submit"]:hover{background-color:#eeae00;color:#fff; cursor:pointer}
+.coursebutton a.flatbtn:hover{background-color:#eeae00;color:#fff; cursor:pointer;text-decoration:none}
+.courseadd img{width:100%;margin-bottom:12px;border:3px solid #EEAE00;border-radius:6px}
+.courseadd{background-color:#fff}
+.backcolorwhite{background-color:#fff}
+.backcolorblue{background-color:#80AAF0;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
+.backcolorlightyellow{background-color:#F0D380;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
+
+
+/*---- Slideout tab ----*/
+.slide-out-div h4{margin-top:12px}
+.slide-out-div {padding: 8px;width: 270px;background: #DAE2F1;border:#003466 2px solid;}
+.slide-out-div .slideoutform{padding:0.5em;width:100%;border:none;margin-bottom:8px;font-size:14px;color:#333}
+.slide-out-div .slideoutformtextarea{border:none;width:100%;padding:0.5em;resize:none;font-size:14px;color:#333;margin-bottom:8px;}
+.slide-out-div .slideoutform:focus{outline:none}
+.slide-out-div .slideoutformtextarea:focus{outline:none}
+.slide-out-div p{margin:0;text-align:center}
+
+
+/*---- Course detail page ----*/
+.coursedetailheading{background-color:#003466;color:#fff; margin:0;padding:8px 14px}
+.coursedetailwrap{background-color:#fff;padding:8px 14px;font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif}
+.flatbtn{border:0;font-size:14px;padding:9px 17px;background-color:#003466;color:#fff;display:inline-block}
+.flatbtn:hover{background-color:#eeae00;color:#fff; cursor:pointer;text-decoration:none}
+.wrap2heading{background-color:#127c65;color:#fff;font-size:22px;padding:6px 12px}
+.innerwrap{padding:0.8em 1.2em}
+.innerwrap p{margin:0}
+
+
+/*---- Business Pages ----*/
+.businessform{padding:10px 20px;}
+.businessform h2{margin:8px 4px;;text-align:center}
+.businessform label{display:block;margin-bottom:10px}
+.businessform input[type="text"]{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none}
+.businessform input[type="email"]{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none}
+.businessform input[type="url"]{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none}
+.businessform input[type="file"]{padding:0.5em 0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none;background-color:#fff}
+.businessform input[type="name"]{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none}
+.businessform select{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none;color:#333}
+.businessform textarea{padding:0.6em;width:100%;margin-bottom:16px;font-size:14px;border:none;resize:none}
+.businesstext{padding:12px}
+.businessbanner{border:1px solid #333;padding:10px;background-color:#F4F4F4;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;}
+.businessbanner h1{margin:0;}
